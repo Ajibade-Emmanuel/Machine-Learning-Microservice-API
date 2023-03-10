@@ -48,4 +48,42 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+Files in Repository
+    Folder for Circleci Config Files (config.yml)
+    
+        -- .circleci/
+    
+    Application Output Log Files
+    
+        -- output_txt_files/docker_out.txt
+        
+        -- output_txt_files/kubernetes_out.txt
+        
+    Folder for Application Models
+    
+        -- model_data/
+    
+    Files to build application
+    
+        -- Makefile
+    
+    Application file
+    
+        -- app.py
+    
+        -- requirements.txt
+    
+    Files to build and run docker image
+    
+        -- run_docker.sh
+    
+    Files to deploy to kubernetes
+    
+        -- run_kubernetes.sh
+    
+    Files to upload images to docker hub
+    
+        -- upload_docker.sh
+    
 # Machine-Learning-Microservice-API
