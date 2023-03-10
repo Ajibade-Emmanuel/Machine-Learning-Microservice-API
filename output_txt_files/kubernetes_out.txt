@@ -1,1 +1,16 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) voclabs:~/environment/project-ml-microservice-k(.devops) voclabs:~/environment/project-ml-microservice-ketes $ bash run_kubernetes.sh
+pod/ajibade-ml-micro-api created
+NAME                   READY   STATUS              RESTARTS   AGE
+ajibade-ml-micro-api   0/1     ContainerCreating   0          0s
+waiting for 60 seconds before foarwarding container to host..
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+(.devops) voclabs:~/environment/project-ml-microservice-kubernetes $ bash make_prediction.sh
+Port: 8000
+{(.devops) 
+  "prediction": [
+    20.35373177134412
+  ]
+}
